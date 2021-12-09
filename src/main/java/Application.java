@@ -28,7 +28,7 @@ public class Application {
 
         System.out.println(kotik1.getName() + " " + kotik1.getWeight());
         System.out.println("Голоса одинаковые: " + compareVoice(kotik1,kotik2));
-        System.out.println("Количество созданных котиков " + Kotik.getKotikCount());
+        System.out.println("Количество созданных котиков " + Kotik.getCount());
 
     }
 

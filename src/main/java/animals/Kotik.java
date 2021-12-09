@@ -42,13 +42,6 @@ public class Kotik {
         this.weight = weight;
     }
 
-    public static int getKotikCount() {
-        return count;
-    }
-
-    public void setKotikCount(int count) {
-        Kotik.count = count;
-    }
 
     public String getTypeEat() {
         return typeEat;
@@ -56,6 +49,14 @@ public class Kotik {
 
     public void setTypeEat(String typeEat) {
         this.typeEat = typeEat;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static void setCount(int count) {
+        Kotik.count = count;
     }
 
     public Kotik() {
