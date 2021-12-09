@@ -4,7 +4,7 @@ package animals;
 public class Kotik {
     private String name;
     private String voice;
-    private int satiety = 0;
+    private int satiety;
     private int weight;
     private static int count = 0;
     private String typeEat;
@@ -120,7 +120,7 @@ public class Kotik {
         return true;
     }
 
-    private final int METHODS = 5;
+    private static final int METHODS = 5;
 
     public int getMETHODS() {
         return METHODS;
