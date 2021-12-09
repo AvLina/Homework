@@ -4,9 +4,9 @@ package animals;
 public class Kotik {
     private String name;
     private String voice;
-    private int satiety;
+    private int satiety = 0;
     private int weight;
-    private static int kotikCount = 0;
+    private static int count = 0;
     private String typeEat;
 
 
@@ -43,11 +43,11 @@ public class Kotik {
     }
 
     public static int getKotikCount() {
-        return kotikCount;
+        return count;
     }
 
-    public static void setKotikCount(int kotikCount) {
-        Kotik.kotikCount = kotikCount;
+    public void setKotikCount(int count) {
+        Kotik.count = count;
     }
 
     public String getTypeEat() {
@@ -59,7 +59,7 @@ public class Kotik {
     }
 
     public Kotik() {
-        kotikCount++;
+        count++;
     }
 
     public Kotik(String name, String voice, int satiety, int weight) {
@@ -67,7 +67,7 @@ public class Kotik {
         this.voice = voice;
         this.satiety = satiety;
         this.weight = weight;
-        kotikCount++;
+        count++;
     }
 
     private boolean play() {
@@ -120,7 +120,11 @@ public class Kotik {
         return true;
     }
 
-    final int METHODS = 5;
+    private final int METHODS = 5;
+
+    public int getMETHODS() {
+        return METHODS;
+    }
 
     public void eat(int satiety) {
         this.satiety += satiety;
