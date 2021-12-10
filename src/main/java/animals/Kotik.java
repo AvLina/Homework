@@ -138,27 +138,27 @@ public class Kotik {
     public String[] liveAnotherDay() {
         String[] array = new String[24];
         for (int i = 0; i < 24; i++) {
-            int num = (int) ((int) (Math.random() * METHODS) + 1);
+            int num = ((int) (Math.random() * METHODS) + 1);
             switch (num) {
                 case (1):
                     if (play() == true) {
-                        array[i] = (num + "- играл");
+                        array[i] = (i + "- играл");
                     } else {
                         eat(num);
-                        array[i] = (num + "- ел");
+                        array[i] = (i + "- ел");
                     }
                     break;
                 case (2):
                     if (sleep() == true) {
-                        array[i] = (num + "- спал");
+                        array[i] = (i + "- спал");
                     } else {
                         eat(num);
-                        array[i] = (num + "- ел");
+                        array[i] = (i + "- ел");
                     }
                     break;
                 case (3):
                     if (wash() == true) {
-                        array[i] = (num + "- умывался");
+                        array[i] = (i + "- умывался");
                     } else {
                         eat(num);
                         array[i] = (num + "- ел");
@@ -166,18 +166,18 @@ public class Kotik {
                     break;
                 case (4):
                     if (walk() == true) {
-                        array[i] = (num + "- гулял");
+                        array[i] = (i + "- гулял");
                     } else {
                         eat(num);
-                        array[i] = (num + "- ел");
+                        array[i] = (i + "- ел");
                     }
                     break;
                 case (5):
                     if (hunt() == true) {
-                        array[i] = (num + "- охотился");
+                        array[i] = (i + "- охотился");
                     } else {
                         eat(num);
-                        array[i] = (num + "- ел");
+                        array[i] = (i + "- ел");
                     }
                     break;
             }
