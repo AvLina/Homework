@@ -73,52 +73,46 @@ public class Kotik {
 
     private boolean play() {
         if (satiety > 0) {
-            System.out.println("Давай играть");
             satiety--;
+            return true;
         } else {
-            System.out.println("Я голодный");
+            return false;
         }
-        return true;
     }
 
     private boolean sleep() {
         if (satiety > 0) {
-            System.out.println("Хочу спать");
             satiety--;
+            return true;
         } else {
-            System.out.println("Я голодный");
+            return false;
         }
-        return true;
     }
 
     private boolean wash() {
         if (satiety > 0) {
-            System.out.println("Пошли купаться");
             satiety--;
+            return true;
         } else {
-            System.out.println("Я голодный");
+            return false;
         }
-        return true;
     }
-
     private boolean walk() {
         if (satiety > 0) {
-            System.out.println("Пойдем гулять");
             satiety--;
+            return true;
         } else {
-            System.out.println("Я голодный");
+            return false;
         }
-        return true;
     }
 
     private boolean hunt() {
         if (satiety > 0) {
-            System.out.println("RRRR.... I'm a tiger");
             satiety--;
+            return true;
         } else {
-            System.out.println("Я голодный");
+            return false;
         }
-        return true;
     }
 
     private static final int METHODS = 5;
@@ -128,12 +122,11 @@ public class Kotik {
     }
 
     public void eat(int satiety) {
-        this.satiety += satiety;
+        this.satiety = this.satiety + satiety;
     }
 
     public void eat(int satiety, String typeEat) {
-        String s = typeEat;
-        int satietyIn = satiety;
+        eat(satiety);
     }
 
     public void eat() {
