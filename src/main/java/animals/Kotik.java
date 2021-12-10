@@ -161,7 +161,7 @@ public class Kotik {
                         array[i] = (i + "- умывался");
                     } else {
                         eat(num);
-                        array[i] = (num + "- ел");
+                        array[i] = (i + "- ел");
                     }
                     break;
                 case (4):
