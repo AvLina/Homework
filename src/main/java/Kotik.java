@@ -1,6 +1,3 @@
-import animals.Herbivore;
-import animals.Run;
-import animals.Voice;
 
 public class Kotik {
     private String name;
