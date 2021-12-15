@@ -2,7 +2,7 @@ package animals;
 
 import food.Food;
 
-public class Kotik extends Animal implements Run, Voice {
+public class Kotik extends Herbivore implements Run, Voice {
 
     @Override
     public void eat(Food food) {
