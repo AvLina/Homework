@@ -1,5 +1,3 @@
-import animals.Kotik;
-
 public class Application {
 
     private static boolean compareVoice(Kotik kotik1, Kotik kotik2) {
