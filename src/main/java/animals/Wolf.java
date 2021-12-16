@@ -1,6 +1,7 @@
 package animals;
 
-public abstract class Wolf extends Carnivorous implements Run, Voice {
+public class Wolf extends Carnivorous implements Run, Voice {
+
 
     @Override
     public void run() {

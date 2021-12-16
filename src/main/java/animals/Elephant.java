@@ -1,6 +1,7 @@
 package animals;
 
-public abstract class Elephant extends Herbivore implements Run, Voice {
+public class Elephant extends Herbivore implements Run, Voice {
+
 
     @Override
     public void run() {
