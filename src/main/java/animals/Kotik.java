@@ -1,7 +1,5 @@
 package animals;
 
-import food.Food;
-
 public class Kotik extends Carnivorous implements Run, Voice {
 
 
