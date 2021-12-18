@@ -1,7 +1,14 @@
 package animals;
 
+public class Kotik extends Carnivorous implements Run, Voice {
 
-public class Kotik {
+
+
+    @Override
+    public void run() {
+
+    }
+
     private String name;
     private String voice;
     private int satiety;
