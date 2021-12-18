@@ -1,16 +1,17 @@
 package employee;
 
+import animals.Animal;
 import animals.Voice;
+import food.Food;
 
-public abstract class Worker implements Voice {
+public class Worker {
 
-    public boolean feed(String name, String food) {
-        return true;
-
+    public void feed (Animal animal, Food food) {
+        animal.eat(food);
     }
 
-    public void getVoice (String getVoice) {
-
+    public void getVoice (Voice voice) {
+        System.out.println(voice.getVoice());
     }
 
 }
