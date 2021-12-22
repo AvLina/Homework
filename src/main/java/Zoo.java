@@ -54,11 +54,11 @@ public class Zoo {
 
     }
 
-    private static getCarnivorous(String name) {
-        return;
-    }
-
-    private static getHerbivore(String name) {
-        return;
-    }
+//    private static getCarnivorous(String name) {
+//        return;
+//    }
+//
+//    private static getHerbivore(String name) {
+//        return;
+//    }
 }
