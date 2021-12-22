@@ -8,10 +8,7 @@ public class Application {
         if (voice1.equals(voice2) == true)
             return true;
         else return false;
-
     }
-
-
 
     public static void main(String[] args) {
 
@@ -31,6 +28,4 @@ public class Application {
         System.out.println("Количество созданных котиков " + Kotik.getCount());
 
     }
-
-
 }

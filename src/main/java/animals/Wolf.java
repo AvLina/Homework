@@ -4,9 +4,7 @@ import model.Size;
 
 public class Wolf extends Carnivorous implements Run, Voice {
 
-
     public Wolf() {
-
     }
 
     @Override

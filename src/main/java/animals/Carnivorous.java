@@ -2,7 +2,9 @@ package animals;
 
 import food.Food;
 import food.Meat;
+import food.WrongFoodException;
 import model.Size;
+
 
 public class Carnivorous extends Animal {
 
@@ -11,7 +13,7 @@ public class Carnivorous extends Animal {
     }
 
     public Carnivorous() {
-
+        super();
     }
 
 
@@ -25,8 +27,14 @@ public class Carnivorous extends Animal {
         } else {
             System.out.println("Хищники не едят траву");
         }
-
+        try {
+            throw new WrongFoodException("Я такое не ем");
+        } catch (WrongFoodException e) {
+            e.printStackTrace();
+        }
     }
+
+
 
     @Override
     public Size getSize() {

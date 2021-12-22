@@ -6,21 +6,22 @@ import static model.Size.SMALL;
 
 public class Kotik extends Carnivorous implements Run, Voice {
 
-
-    @Override
-    public void run() {
-
-    }
-
-
-
     private String name;
     private String voice;
     private int satiety;
     private int weight;
     private static int count = 0;
     private String typeEat;
+    private static final int METHODS = 5;
 
+    @Override
+    public void run() {
+    }
+
+    @Override
+    public Size getSize() {
+        return SMALL;
+    }
 
     public String getName() {
         return name;
@@ -46,12 +47,6 @@ public class Kotik extends Carnivorous implements Run, Voice {
         this.satiety = satiety;
     }
 
-    @Override
-    public Size getSize() {
-        return SMALL;
-    }
-
-
     public int getWeight() {
         return weight;
     }
@@ -59,7 +54,6 @@ public class Kotik extends Carnivorous implements Run, Voice {
     public void setWeight(int weight) {
         this.weight = weight;
     }
-
 
     public String getTypeEat() {
         return typeEat;
@@ -134,8 +128,6 @@ public class Kotik extends Carnivorous implements Run, Voice {
         }
     }
 
-    private static final int METHODS = 5;
-
     public int getMETHODS() {
         return METHODS;
     }
@@ -150,8 +142,6 @@ public class Kotik extends Carnivorous implements Run, Voice {
 
     public void eat() {
         eat(satiety, typeEat);
-
-
     }
 
     public String[] liveAnotherDay() {

@@ -4,9 +4,7 @@ import model.Size;
 
 public class Elephant extends Herbivore implements Run, Voice {
 
-
     public Elephant() {
-
     }
 
     @Override
