@@ -1,13 +1,18 @@
 package animals;
 
-public class Kotik extends Carnivorous implements Run, Voice {
+import model.Size;
 
+import static model.Size.SMALL;
+
+public class Kotik extends Carnivorous implements Run, Voice {
 
 
     @Override
     public void run() {
 
     }
+
+
 
     private String name;
     private String voice;
@@ -40,6 +45,12 @@ public class Kotik extends Carnivorous implements Run, Voice {
     public void setSatiety(int satiety) {
         this.satiety = satiety;
     }
+
+    @Override
+    public Size getSize() {
+        return SMALL;
+    }
+
 
     public int getWeight() {
         return weight;
@@ -104,6 +115,7 @@ public class Kotik extends Carnivorous implements Run, Voice {
             return false;
         }
     }
+
     private boolean walk() {
         if (satiety > 0) {
             satiety--;

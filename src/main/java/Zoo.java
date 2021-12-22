@@ -2,6 +2,7 @@ import animals.*;
 import employee.Worker;
 import food.Grass;
 import food.Meat;
+import model.Size;
 
 
 public class Zoo {
@@ -9,10 +10,10 @@ public class Zoo {
 
     public static Swim[] createPond() {
         Swim[] swimmer = new Swim[2];
-            swimmer[0] = new Duck();
-            swimmer[1] = new Fish();
+        swimmer[0] = new Duck();
+        swimmer[1] = new Fish();
 
-            return swimmer;
+        return swimmer;
     }
 
     public static void main(String[] args) {
@@ -34,5 +35,30 @@ public class Zoo {
         }
     }
 
+    public void carnivorousAviary(Size MEDIUM) {
 
+    }
+
+    public void herbivoreAviary(Size LARGE) {
+
+    }
+
+    private static void fillCarnivorousAviary() {
+
+    }
+
+    private static void fillHerbivoreAviary() {
+        Duck duck = new Duck();
+        Elephant elephant = new Elephant();
+
+
+    }
+
+    private static getCarnivorous(String name) {
+        return;
+    }
+
+    private static getHerbivore(String name) {
+        return;
+    }
 }

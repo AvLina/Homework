@@ -2,18 +2,42 @@ package animals;
 
 import food.Food;
 import food.Grass;
+import food.WrongFoodException;
+import model.Size;
 
-public abstract class Herbivore extends Animal{
+public class Herbivore extends Animal{
 
-    @Override
-    public void eat(Food food) {
+    public Herbivore(String name) {
+        super(name);
+    }
+
+    public Herbivore() {
+
+    }
+
+//    public void eat(Food food) {
+//        if (food instanceof Grass) {
+//            int satiety = getSatiety();
+//            int energy = food.getEnergy();
+//            setSatiety(satiety + energy);
+//            System.out.println("Сытость: " + getSatiety());
+//        } else {
+//            System.out.println("Травоядные не едят мясо");
+//        }
+//    }
+
+    public void eat(Food food) throws WrongFoodException {
         if (food instanceof Grass) {
             int satiety = getSatiety();
             int energy = food.getEnergy();
             setSatiety(satiety + energy);
             System.out.println("Сытость: " + getSatiety());
         } else {
-            System.out.println("Травоядные не едят мясо");
+            throw new WrongFoodException("Я такое не ем" + food);
         }
+    }
+    @Override
+    public Size getSize() {
+        return null;
     }
 }
