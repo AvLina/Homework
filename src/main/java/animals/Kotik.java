@@ -1,10 +1,14 @@
 package animals;
 
 import model.Size;
-
 import static model.Size.SMALL;
 
 public class Kotik extends Carnivorous implements Run, Voice {
+
+    public Kotik(String name, String name1) {
+        super(name);
+        this.name = name1;
+    }
 
     private String name;
     private String voice;

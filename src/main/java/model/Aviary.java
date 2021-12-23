@@ -2,7 +2,6 @@ package model;
 
 import animals.Animal;
 import animals.Herbivore;
-
 import java.util.HashMap;
 
 public class Aviary<T extends Animal> {
@@ -39,6 +38,6 @@ public class Aviary<T extends Animal> {
     }
 
     public Herbivore[] addAnimal() {
-        return new Herbivore[0];
+        return new Herbivore[3];
     }
 }
