@@ -10,6 +10,15 @@ public class Kotik extends Carnivorous implements Run, Voice {
         this.name = name1;
     }
 
+    public Kotik(String name, int satiety) {
+        super(name);
+        this.satiety = satiety;
+    }
+
+    public Kotik(int weight) {
+        this.weight = weight;
+    }
+
     public Kotik(String name) {
         this.name = name;
     }
