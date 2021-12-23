@@ -13,13 +13,14 @@ public class Aviary<T extends Animal> {
         this.size = size;
     }
 
-    public <A extends T> void addAnimal(A animal) throws WrongSizeException {
+    public <A extends T> void addAnimal(A animal) {
         if (size == animal.getSize()) {
             aviaryMap.put(animal.getName(), animal);
         } else {
             try {
                 throw new WrongSizeException("Вольер меньше животного");
-            } finally {
+            } catch (WrongSizeException e) {
+                e.printStackTrace();
             }
         }
     }
