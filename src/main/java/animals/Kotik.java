@@ -10,6 +10,10 @@ public class Kotik extends Carnivorous implements Run, Voice {
         this.name = name1;
     }
 
+    public Kotik(String name) {
+        this.name = name;
+    }
+
     private String name;
     private String voice;
     private int satiety;
@@ -154,7 +158,7 @@ public class Kotik extends Carnivorous implements Run, Voice {
             int num = ((int) (Math.random() * METHODS) + 1);
             switch (num) {
                 case (1):
-                    if (play() == true) {
+                    if (play()) {
                         array[i] = (i + " - играл");
                     } else {
                         eat(num);
@@ -162,7 +166,7 @@ public class Kotik extends Carnivorous implements Run, Voice {
                     }
                     break;
                 case (2):
-                    if (sleep() == true) {
+                    if (sleep()) {
                         array[i] = (i + " - спал");
                     } else {
                         eat(num);
@@ -170,7 +174,7 @@ public class Kotik extends Carnivorous implements Run, Voice {
                     }
                     break;
                 case (3):
-                    if (wash() == true) {
+                    if (wash()) {
                         array[i] = (i + " - умывался");
                     } else {
                         eat(num);
@@ -178,7 +182,7 @@ public class Kotik extends Carnivorous implements Run, Voice {
                     }
                     break;
                 case (4):
-                    if (walk() == true) {
+                    if (walk()) {
                         array[i] = (i + " - гулял");
                     } else {
                         eat(num);
@@ -186,7 +190,7 @@ public class Kotik extends Carnivorous implements Run, Voice {
                     }
                     break;
                 case (5):
-                    if (hunt() == true) {
+                    if (hunt()) {
                         array[i] = (i + " - охотился");
                     } else {
                         eat(num);
