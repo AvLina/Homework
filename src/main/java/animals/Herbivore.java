@@ -5,7 +5,7 @@ import food.Grass;
 import food.WrongFoodException;
 import model.Size;
 
-public class Herbivore extends Animal {
+public abstract class Herbivore extends Animal {
 
     public Herbivore(String name) {
         super(name);

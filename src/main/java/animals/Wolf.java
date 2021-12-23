@@ -26,5 +26,3 @@ public class Wolf extends Carnivorous implements Run, Voice {
         super(name);
     }
 }
-
-

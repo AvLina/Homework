@@ -5,7 +5,7 @@ public class Application {
     private static boolean compareVoice(Kotik kotik1, Kotik kotik2) {
         String voice1 = kotik1.getVoice();
         String voice2 = kotik2.getVoice();
-        if (voice1.equals(voice2) == true)
+        if (voice1.equals(voice2))
             return true;
         else return false;
     }

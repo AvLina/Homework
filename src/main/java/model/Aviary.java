@@ -2,6 +2,7 @@ package model;
 
 import animals.Animal;
 import animals.Herbivore;
+
 import java.util.HashMap;
 
 public class Aviary<T extends Animal> {

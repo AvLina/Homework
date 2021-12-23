@@ -26,4 +26,3 @@ public class Elephant extends Herbivore implements Run, Voice {
         super(name);
     }
 }
-

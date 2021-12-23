@@ -6,7 +6,7 @@ import food.WrongFoodException;
 import model.Size;
 
 
-public class Carnivorous extends Animal {
+public abstract class Carnivorous extends Animal {
 
     public Carnivorous(String name) {
         super(name);
@@ -32,12 +32,5 @@ public class Carnivorous extends Animal {
         } catch (WrongFoodException e) {
             e.printStackTrace();
         }
-    }
-
-
-
-    @Override
-    public Size getSize() {
-        return null;
     }
 }

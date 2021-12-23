@@ -36,6 +36,7 @@ public class Zoo {
     private static Aviary<Carnivorous> carnivorousAviary = new Aviary<>(Size.MEDIUM);
     private static Aviary<Herbivore> herbivoreAviary = new Aviary<>(Size.SMALL);
 
+
     private static Herbivore[] fillCarnivorousAviary() {
         Carnivorous[] carnivorous = new Carnivorous[3];
         return carnivorousAviary.addAnimal();

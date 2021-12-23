@@ -5,36 +5,36 @@ import model.Size;
 
 public abstract class Animal {
 
-   private int satiety;
-   private String name;
+    private int satiety;
+    private String name;
 
     public Animal() {
 
     }
 
 
-   public String getName() {
-      return name;
-   }
+    public String getName() {
+        return name;
+    }
 
-   public void setName(String name) {
-      this.name = name;
-   }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-   public int getSatiety() {
-      return satiety;
-   }
+    public int getSatiety() {
+        return satiety;
+    }
 
-   public void setSatiety(int satiety) {
-      this.satiety = satiety;
-   }
+    public void setSatiety(int satiety) {
+        this.satiety = satiety;
+    }
 
-   public Animal(String name) {
-      this.name = name;
-   }
+    public Animal(String name) {
+        this.name = name;
+    }
 
-   public abstract Size getSize();
+    public abstract Size getSize();
 
 
-   public abstract void eat(Food food);
+    public abstract void eat(Food food);
 }

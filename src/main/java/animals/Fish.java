@@ -2,6 +2,7 @@ package animals;
 
 
 import model.Size;
+
 import static model.Size.MEDIUM;
 
 public class Fish extends Carnivorous implements Swim {

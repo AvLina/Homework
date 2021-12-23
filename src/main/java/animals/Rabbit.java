@@ -22,3 +22,4 @@ public class Rabbit extends Herbivore implements Run {
         System.out.println("Кролик бегает");
     }
 }
+

@@ -1,6 +1,7 @@
 package animals;
 
 import model.Size;
+
 import static model.Size.SMALL;
 
 public class Kotik extends Carnivorous implements Run, Voice {

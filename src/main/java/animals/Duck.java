@@ -1,6 +1,7 @@
 package animals;
 
 import model.Size;
+
 import static model.Size.SMALL;
 
 public class Duck extends Herbivore implements Fly, Swim, Voice, Run {
