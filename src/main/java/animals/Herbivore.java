@@ -14,6 +14,7 @@ public abstract class Herbivore extends Animal {
     public Herbivore() {
     }
 
+    @Override
     public void eat(Food food) {
         if (food instanceof Grass) {
             int satiety = getSatiety();
@@ -24,7 +25,7 @@ public abstract class Herbivore extends Animal {
             System.out.println("Травоядные не едят мясо");
         }
         try {
-            throw new WrongFoodException ("Я такое не ем");
+            throw new WrongFoodException("Я такое не ем");
         } catch (WrongFoodException e) {
             e.printStackTrace();
         }

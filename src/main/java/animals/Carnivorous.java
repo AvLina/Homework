@@ -17,7 +17,7 @@ public abstract class Carnivorous extends Animal {
     }
 
 
-    @Override
+   @Override
     public void eat(Food food) {
         if (food instanceof Meat) {
             int satiety = getSatiety();

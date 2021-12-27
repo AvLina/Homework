@@ -2,7 +2,6 @@ package model;
 
 import animals.Animal;
 import animals.Herbivore;
-
 import java.util.HashMap;
 
 public class Aviary<T extends Animal> {
@@ -17,7 +16,7 @@ public class Aviary<T extends Animal> {
         if (size == animal.getSize()) {
             aviaryMap.put(animal.getName(), animal);
         } else {
-                throw new WrongSizeException();
+                throw new WrongSizeException("Вольер меньше животного");
 
             }
         }
